@@ -1,7 +1,25 @@
 aid: produce-pay
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/produce-pay.png
 name: Produce Pay
-description: Produce Pay is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: ProducePay is an agtech fintech platform for the global fresh-produce supply chain, giving
+  growers, distributors, and buyers a combination of trade financing and operational tooling. Its offerings
+  include Pre-Season Financing (working capital ahead of the growing season), Quick-Pay (converting produce
+  shipments into immediate cash during peak season), Visibility (real-time shipment tracking, quality
+  control, and data-driven insights), Sourcing (connecting buyers and sellers for long-term partnerships),
+  and Predictable Commerce programs that bundle capital, visibility, and partnerships for year-round supply
+  stability. The company operates a marketplace for its members but publishes no public developer API,
+  developer portal, or API documentation as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/produce-pay/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Agriculture
+- Fintech
+- Financing
+- Supply Chain
+- Marketplace
+- Trade Finance
+- AgTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/produce-pay-domain-security.yml
 - type: Website
   url: https://producepay.com
+- type: Blog
+  url: https://producepay.com/blog/
+- type: Login
+  url: https://marketplace.producepay.com/
+- type: Support
+  url: https://producepay.com/contact-us/
+- type: TermsOfService
+  url: https://producepay.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://producepay.com/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/producepay
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
